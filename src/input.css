@@ -1,0 +1,585 @@
+
+
+
+/* font variables */
+:root{
+    /* normal farsi font */
+    --font-farsi-thin: "yekan-thin";
+    --font-farsi-UltraLight: "yekan-UltraLight";
+    --font-farsi-light: "yekan-light";
+    --font-farsi-regular: "yekan-regular";
+    --font-farsi-medium: "yekan-medium";
+    --font-farsi-semibold: "yekan-semibold";
+    --font-farsi-bold: "yekan-bold";
+    --font-farsi-ExtraBold: "yekan-ExtraBold";
+    --font-farsi-black: "yekan-black";
+    --font-farsi-ExtraBlack: "yelan-ExtraBlack";
+    --font-farsi-heavy: "yekan-heavy";
+    /* fanum farsi font */
+    --font-farsi-fanum-thin: "yekan-thin-FaNum";
+    --font-farsi-fanum-UltraLight: "yekan-UltraLight-FaNum";
+    --font-farsi-fanum-light: "yekan-light-FaNum";
+    --font-farsi-fanum-regular: "yekan-regular-FaNum";
+    --font-farsi-fanum-medium: "yekan-medium-FaNum";
+    --font-farsi-fanum-semibold: "yekan-semibold-FaNum";
+    --font-farsi-fanum-bold: "yekan-bold-FaNum";
+    --font-farsi-fanum-ExtraBold: "yekan-ExtraBold-FaNum";
+    --font-farsi-fanum-black: "yekan-black-FaNum";
+    --font-farsi-fanum-ExtraBlack: "yelan-ExtraBlack-FaNum";
+    --font-farsi-fanum-heavy: "yekan-heavy-FaNum";
+    /* no english farsi font */
+    --font-farsi-NoEn-thin: "yekan-thin-NoEn";
+    --font-farsi-NoEn-UltraLight: "yekan-UltraLight-NoEn";
+    --font-farsi-NoEn-light: "yekan-light-NoEn";
+    --font-farsi-NoEn-regular: "yekan-regular-NoEn";
+    --font-farsi-NoEn-medium: "yekan-medium-NoEn";
+    --font-farsi-NoEn-semibold: "yekan-semibold-NoEn";
+    --font-farsi-NoEn-bold: "yekan-bold-NoEn";
+    --font-farsi-NoEn-ExtraBold: "yekan-ExtraBold-NoEn";
+    --font-farsi-NoEn-black: "yekan-black-NoEn";
+    --font-farsi-NoEn-ExtraBlack: "yelan-ExtraBlack-NoEn";
+    --font-farsi-NoEn-heavy: "yekan-heavy-NoEn";
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: "yekan-thin";
+            src: url("../../fonts/farsi normal/woff2/IRANYekanX-Thin.woff2") format("woff2"),
+                 url("../../fonts/farsi normal/woff/IRANYekanX-Thin.woff") format("woff"),
+                 url("../../fonts/farsi normal/ttf/IRANYekanX-Thin.ttf") format("truetype"),
+                 url("../../fonts/farsi normal/eot/IRANYekanX-Thin.eot") format("eot");
+        font-weight: 100;
+    }
+    @font-face {
+        font-family: "yekan-UltraLight";
+            src: url("../../fonts/farsi normal/woff2/IRANYekanX-UltraLight.woff2") format("woff2"),
+                 url("../../fonts/farsi normal/woff/IRANYekanX-UltraLight.woff") format("woff"),
+                 url("../../fonts/farsi normal/ttf/IRANYekanX-UltraLight.ttf") format("truetype"),
+                 url("../../fonts/farsi normal/eot/IRANYekanX-UltraLight.eot") format("eot");
+        font-weight: 200;
+    }
+    @font-face {
+        font-family: "yekan-light";
+            src: url("../../fonts/farsi normal/woff2/IRANYekanX-Light.woff2") format("woff2"),
+                 url("../../fonts/farsi normal/woff/IRANYekanX-Light.woff") format("woff"),
+                 url("../../fonts/farsi normal/ttf/IRANYekanX-Light.ttf") format("truetype"),
+                 url("../../fonts/farsi normal/eot/IRANYekanX-Light.eot") format("eot");
+        font-weight: 300;
+    }
+    @font-face {
+        font-family: "yekan-regular";
+            src: url("../../fonts/farsi normal/woff2/IRANYekanX-Regular.woff2") format("woff2"),
+                 url("../../fonts/farsi normal/woff/IRANYekanX-Regular.woff") format("woff"),
+                 url("../../fonts/farsi normal/ttf/IRANYekanX-Regular.ttf") format("truetype"),
+                 url("../../fonts/farsi normal/eot/IRANYekanX-Regular.eot") format("eot");
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "yekan-medium";
+            src: url("../../fonts/farsi normal/woff2/IRANYekanX-Medium.woff2") format("woff2"),
+                 url("../../fonts/farsi normal/woff/IRANYekanX-Medium.woff") format("woff"),
+                 url("../../fonts/farsi normal/ttf/IRANYekanX-Medium.ttf") format("truetype"),
+                 url("../../fonts/farsi normal/eot/IRANYekanX-Medium.eot") format("eot");
+        font-weight: 500;
+    }
+    @font-face {
+        font-family: "yekan-semibold";
+            src: url("../../fonts/farsi normal/woff2/IRANYekanX-DemiBold.woff2") format("woff2"),
+                 url("../../fonts/farsi normal/woff/IRANYekanX-DemiBold.woff") format("woff"),
+                 url("../../fonts/farsi normal/ttf/IRANYekanX-DemiBold.ttf") format("truetype"),
+                 url("../../fonts/farsi normal/eot/IRANYekanX-DemiBold.eot") format("eot");
+        font-weight: 600;
+    }
+    @font-face {
+        font-family: "yekan-bold";
+            src: url("../../fonts/farsi normal/woff2/IRANYekanX-Bold.woff2") format("woff2"),
+                 url("../../fonts/farsi normal/woff/IRANYekanX-Bold.woff") format("woff"),
+                 url("../../fonts/farsi normal/ttf/IRANYekanX-Bold.ttf") format("truetype"),
+                 url("../../fonts/farsi normal/eot/IRANYekanX-Bold.eot") format("eot");
+        font-weight: 700;
+    }
+    @font-face {
+        font-family: "yekan-ExtraBold";
+            src: url("../../fonts/farsi normal/woff2/IRANYekanX-ExtraBold.woff2") format("woff2"),
+                 url("../../fonts/farsi normal/woff/IRANYekanX-ExtraBold.woff") format("woff"),
+                 url("../../fonts/farsi normal/ttf/IRANYekanX-ExtraBold.ttf") format("truetype"),
+                 url("../../fonts/farsi normal/eot/IRANYekanX-ExtraBold.eot") format("eot");
+        font-weight: 800;
+    }
+    @font-face {
+        font-family: "yekan-black";
+            src: url("../../fonts/farsi normal/woff2/IRANYekanX-Black.woff2") format("woff2"),
+                 url("../../fonts/farsi normal/woff/IRANYekanX-Black.woff") format("woff"),
+                 url("../../fonts/farsi normal/ttf/IRANYekanX-Black.ttf") format("truetype"),
+                 url("../../fonts/farsi normal/eot/IRANYekanX-Black.eot") format("eot");
+        font-weight: 900;
+    }
+    @font-face {
+        font-family: "yekan-ExtraBlack";
+            src: url("../../fonts/farsi normal/woff2/IRANYekanX-ExtraBlack.woff2") format("woff2"),
+                 url("../../fonts/farsi normal/woff/IRANYekanX-ExtraBlack.woff") format("woff"),
+                 url("../../fonts/farsi normal/ttf/IRANYekanX-ExtraBlack.ttf") format("truetype"),
+                 url("../../fonts/farsi normal/eot/IRANYekanX-ExtraBlack.eot") format("eot");
+        font-weight: 950;
+    }
+    @font-face {
+        font-family: "yekan-heavy";
+            src: url("../../fonts/farsi normal/woff2/IRANYekanX-Heavy.woff2") format("woff2"),
+                 url("../../fonts/farsi normal/woff/IRANYekanX-Heavy.woff") format("woff"),
+                 url("../../fonts/farsi normal/ttf/IRANYekanX-Heavy.ttf") format("truetype"),
+                 url("../../fonts/farsi normal/eot/IRANYekanX-Heavy.eot") format("eot");
+        font-weight: 1000;
+    }
+    
+    /* fanum farsi font */
+    @font-face {
+        font-family: "yekan-thin-FaNum";
+            src: url("../../fonts/farsi fanum/woff2/IRANYekanXFaNum-Thin.woff2") format("woff2"),
+                 url("../../fonts/farsi fanum/woff/IRANYekanXFaNum-Thin.woff") format("woff"),
+                 url("../../fonts/farsi fanum/ttf/IRANYekanXFaNum-Thin.ttf") format("truetype"),
+                 url("../../fonts/farsi fanum/eot/IRANYekanXFaNum-Thin.eot") format("eot");
+        font-weight: 100;
+    }
+    @font-face {
+        font-family: "yekan-UltraLight-FaNum";
+            src: url("../../fonts/farsi fanum/woff2/IRANYekanXFaNum-UltraLight.woff2") format("woff2"),
+                 url("../../fonts/farsi fanum/woff/IRANYekanXFaNum-UltraLight.woff") format("woff"),
+                 url("../../fonts/farsi fanum/ttf/IRANYekanXFaNum-UltraLight.ttf") format("truetype"),
+                 url("../../fonts/farsi fanum/eot/IRANYekanXFaNum-UltraLight.eot") format("eot");
+        font-weight: 200;
+    }
+    @font-face {
+        font-family: "yekan-light-FaNum";
+            src: url("../../fonts/farsi fanum/woff2/IRANYekanXFaNum-Light.woff2") format("woff2"),
+                 url("../../fonts/farsi fanum/woff/IRANYekanXFaNum-Light.woff") format("woff"),
+                 url("../../fonts/farsi fanum/ttf/IRANYekanXFaNum-Light.ttf") format("truetype"),
+                 url("../../fonts/farsi fanum/eot/IRANYekanXFaNum-Light.eot") format("eot");
+        font-weight: 300;
+    }
+    @font-face {
+        font-family: "yekan-regular-FaNum";
+            src: url("../../fonts/farsi fanum/woff2/IRANYekanXFaNum-Regular.woff2") format("woff2"),
+                 url("../../fonts/farsi fanum/woff/IRANYekanXFaNum-Regular.woff") format("woff"),
+                 url("../../fonts/farsi fanum/ttf/IRANYekanXFaNum-Regular.ttf") format("truetype"),
+                 url("../../fonts/farsi fanum/eot/IRANYekanXFaNum-Regular.eot") format("eot");
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "yekan-medium-FaNum";
+            src: url("../../fonts/farsi fanum/woff2/IRANYekanXFaNum-Medium.woff2") format("woff2"),
+                 url("../../fonts/farsi fanum/woff/IRANYekanXFaNum-Medium.woff") format("woff"),
+                 url("../../fonts/farsi fanum/ttf/IRANYekanXFaNum-Medium.ttf") format("truetype"),
+                 url("../../fonts/farsi fanum/eot/IRANYekanXFaNum-Medium.eot") format("eot");
+        font-weight: 500;
+    }
+    @font-face {
+        font-family: "yekan-semibold-FaNum";
+            src: url("../../fonts/farsi fanum/woff2/IRANYekanXFaNum-DemiBold.woff2") format("woff2"),
+                 url("../../fonts/farsi fanum/woff/IRANYekanXFaNum-DemiBold.woff") format("woff"),
+                 url("../../fonts/farsi fanum/ttf/IRANYekanXFaNum-DemiBold.ttf") format("truetype"),
+                 url("../../fonts/farsi fanum/eot/IRANYekanXFaNum-DemiBold.eot") format("eot");
+        font-weight: 600;
+    }
+    @font-face {
+        font-family: "yekan-bold-FaNum";
+            src: url("../../fonts/farsi fanum/woff2/IRANYekanXFaNum-Bold.woff2") format("woff2"),
+                 url("../../fonts/farsi fanum/woff/IRANYekanXFaNum-Bold.woff") format("woff"),
+                 url("../../fonts/farsi fanum/ttf/IRANYekanXFaNum-Bold.ttf") format("truetype"),
+                 url("../../fonts/farsi fanum/eot/IRANYekanXFaNum-Bold.eot") format("eot");
+        font-weight: 700;
+    }
+    @font-face {
+        font-family: "yekan-ExtraBold-FaNum";
+            src: url("../../fonts/farsi fanum/woff2/IRANYekanXFaNum-ExtraBold.woff2") format("woff2"),
+                 url("../../fonts/farsi fanum/woff/IRANYekanXFaNum-ExtraBold.woff") format("woff"),
+                 url("../../fonts/farsi fanum/ttf/IRANYekanXFaNum-ExtraBold.ttf") format("truetype"),
+                 url("../../fonts/farsi fanum/eot/IRANYekanXFaNum-ExtraBold.eot") format("eot");
+        font-weight: 800;
+    }
+    @font-face {
+        font-family: "yekan-black-FaNum";
+            src: url("../../fonts/farsi fanum/woff2/IRANYekanXFaNum-Black.woff2") format("woff2"),
+                 url("../../fonts/farsi fanum/woff/IRANYekanXFaNum-Black.woff") format("woff"),
+                 url("../../fonts/farsi fanum/ttf/IRANYekanXFaNum-Black.ttf") format("truetype"),
+                 url("../../fonts/farsi fanum/eot/IRANYekanXFaNum-Black.eot") format("eot");
+        font-weight: 900;
+    }
+    @font-face {
+        font-family: "yekan-ExtraBlack-FaNum";
+            src: url("../../fonts/farsi fanum/woff2/IRANYekanXFaNum-ExtraBlack.woff2") format("woff2"),
+                 url("../../fonts/farsi fanum/woff/IRANYekanXFaNum-ExtraBlack.woff") format("woff"),
+                 url("../../fonts/farsi fanum/ttf/IRANYekanXFaNum-ExtraBlack.ttf") format("truetype"),
+                 url("../../fonts/farsi fanum/eot/IRANYekanXFaNum-ExtraBlack.eot") format("eot");
+        font-weight: 950;
+    }
+    @font-face {
+        font-family: "yekan-heavy-FaNum";
+            src: url("../../fonts/farsi fanum/woff2/IRANYekanXFaNum-Heavy.woff2") format("woff2"),
+                 url("../../fonts/farsi fanum/woff/IRANYekanXFaNum-Heavy.woff") format("woff"),
+                 url("../../fonts/farsi fanum/ttf/IRANYekanXFaNum-Heavy.ttf") format("truetype"),
+                 url("../../fonts/farsi fanum/eot/IRANYekanXFaNum-Heavy.eot") format("eot");
+        font-weight: 1000;
+    }
+    
+    /* farsi non english */
+    @font-face {
+        font-family: "yekan-thin-NoEn";
+            src: url("../../fonts/farsi NonEnglish/woff2/IRANYekanXNoEn-Thin.woff2") format("woff2"),
+                 url("../../fonts/farsi NonEnglish/woff/IRANYekanXNoEn-Thin.woff") format("woff"),
+                 url("../../fonts/farsi NonEnglish/ttf/IRANYekanXNoEn-Thin.ttf") format("truetype"),
+                 url("../../fonts/farsi NonEnglish/eot/IRANYekanXNoEn-Thin.eot") format("eot");
+        font-weight: 100;
+    }
+    @font-face {
+        font-family: "yekan-UltraLight-NoEn";
+            src: url("../../fonts/farsi NonEnglish/woff2/IRANYekanXNoEn-UltraLight.woff2") format("woff2"),
+                 url("../../fonts/farsi NonEnglish/woff/IRANYekanXNoEn-UltraLight.woff") format("woff"),
+                 url("../../fonts/farsi NonEnglish/ttf/IRANYekanXNoEn-UltraLight.ttf") format("truetype"),
+                 url("../../fonts/farsi NonEnglish/eot/IRANYekanXNoEn-UltraLight.eot") format("eot");
+        font-weight: 200;
+    }
+    @font-face {
+        font-family: "yekan-light-NoEn";
+            src: url("../../fonts/farsi NonEnglish/woff2/IRANYekanXNoEn-Light.woff2") format("woff2"),
+                 url("../../fonts/farsi NonEnglish/woff/IRANYekanXNoEn-Light.woff") format("woff"),
+                 url("../../fonts/farsi NonEnglish/ttf/IRANYekanXNoEn-Light.ttf") format("truetype"),
+                 url("../../fonts/farsi NonEnglish/eot/IRANYekanXNoEn-Light.eot") format("eot");
+        font-weight: 300;
+    }
+    @font-face {
+        font-family: "yekan-regular-NoEn";
+            src: url("../../fonts/farsi NonEnglish/woff2/IRANYekanXNoEn-Regular.woff2") format("woff2"),
+                 url("../../fonts/farsi NonEnglish/woff/IRANYekanXNoEn-Regular.woff") format("woff"),
+                 url("../../fonts/farsi NonEnglish/ttf/IRANYekanXNoEn-Regular.ttf") format("truetype"),
+                 url("../../fonts/farsi NonEnglish/eot/IRANYekanXNoEn-Regular.eot") format("eot");
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "yekan-medium-NoEn";
+            src: url("../../fonts/farsi NonEnglish/woff2/IRANYekanXNoEn-Medium.woff2") format("woff2"),
+                 url("../../fonts/farsi NonEnglish/woff/IRANYekanXNoEn-Medium.woff") format("woff"),
+                 url("../../fonts/farsi NonEnglish/ttf/IRANYekanXNoEn-Medium.ttf") format("truetype"),
+                 url("../../fonts/farsi NonEnglish/eot/IRANYekanXNoEn-Medium.eot") format("eot");
+        font-weight: 500;
+    }
+    @font-face {
+        font-family: "yekan-semibold-NoEn";
+            src: url("../../fonts/farsi NonEnglish/woff2/IRANYekanXNoEn-DemiBold.woff2") format("woff2"),
+                 url("../../fonts/farsi NonEnglish/woff/IRANYekanXNoEn-DemiBold.woff") format("woff"),
+                 url("../../fonts/farsi NonEnglish/ttf/IRANYekanXNoEn-DemiBold.ttf") format("truetype"),
+                 url("../../fonts/farsi NonEnglish/eot/IRANYekanXNoEn-DemiBold.eot") format("eot");
+        font-weight: 600;
+    }
+    @font-face {
+        font-family: "yekan-bold-NoEn";
+            src: url("../../fonts/farsi NonEnglish/woff2/IRANYekanXNoEn-Bold.woff2") format("woff2"),
+                 url("../../fonts/farsi NonEnglish/woff/IRANYekanXNoEn-Bold.woff") format("woff"),
+                 url("../../fonts/farsi NonEnglish/ttf/IRANYekanXNoEn-Bold.ttf") format("truetype"),
+                 url("../../fonts/farsi NonEnglish/eot/IRANYekanXNoEn-Bold.eot") format("eot");
+        font-weight: 700;
+    }
+    @font-face {
+        font-family: "yekan-ExtraBold-NoEn";
+            src: url("../../fonts/farsi NonEnglish/woff2/IRANYekanXNoEn-ExtraBold.woff2") format("woff2"),
+                 url("../../fonts/farsi NonEnglish/woff/IRANYekanXNoEn-ExtraBold.woff") format("woff"),
+                 url("../../fonts/farsi NonEnglish/ttf/IRANYekanXNoEn-ExtraBold.ttf") format("truetype"),
+                 url("../../fonts/farsi NonEnglish/eot/IRANYekanXNoEn-ExtraBold.eot") format("eot");
+        font-weight: 800;
+    }
+    @font-face {
+        font-family: "yekan-black-NoEn";
+            src: url("../../fonts/farsi NonEnglish/woff2/IRANYekanXNoEn-Black.woff2") format("woff2"),
+                 url("../../fonts/farsi NonEnglish/woff/IRANYekanXNoEn-Black.woff") format("woff"),
+                 url("../../fonts/farsi NonEnglish/ttf/IRANYekanXNoEn-Black.ttf") format("truetype"),
+                 url("../../fonts/farsi NonEnglish/eot/IRANYekanXNoEn-Black.eot") format("eot");
+        font-weight: 900;
+    }
+    @font-face {
+        font-family: "yekan-ExtraBlack-NoEn";
+            src: url("../../fonts/farsi NonEnglish/woff2/IRANYekanXNoEn-ExtraBlack.woff2") format("woff2"),
+                 url("../../fonts/farsi NonEnglish/woff/IRANYekanXNoEn-ExtraBlack.woff") format("woff"),
+                 url("../../fonts/farsi NonEnglish/ttf/IRANYekanXNoEn-ExtraBlack.ttf") format("truetype"),
+                 url("../../fonts/farsi NonEnglish/eot/IRANYekanXNoEn-ExtraBlack.eot") format("eot");
+        font-weight: 950;
+    }
+    @font-face {
+        font-family: "yekan-heavy-NoEn";
+            src: url("../../fonts/farsi NonEnglish/woff2/IRANYekanXNoEn-Heavy.woff2") format("woff2"),
+                 url("../../fonts/farsi NonEnglish/woff/IRANYekanXNoEn-Heavy.woff") format("woff"),
+                 url("../../fonts/farsi NonEnglish/ttf/IRANYekanXNoEn-Heavy.ttf") format("truetype"),
+                 url("../../fonts/farsi NonEnglish/eot/IRANYekanXNoEn-Heavy.eot") format("eot");
+        font-weight: 1000;
+    }
+
+
+
+    .nav-item:hover{
+        color: #6EB8FF;
+    }
+    .nav-item.active p{
+        color: #6EB8FF;
+    }
+    .top-lg-slide-item-cover{
+        background-image: linear-gradient(rgba(18, 18, 18, 0) 10vw, rgb(18, 18, 18) 46.875vw), linear-gradient(to left, rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0) 50%);
+    }
+    .sallam{
+        font-family: 'yekan-regular';
+    }
+}
+
+@layer components{
+    .header{
+        position: sticky;
+        top: 0px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 50;
+        background: linear-gradient(to bottom, rgba(18, 18, 18, 0.8) 10%, rgba(18, 18, 18, 0) 80%);
+        padding: 28px 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 340ms ease;
+    }
+    /* #stickyheaders{
+        background-color: transparent;
+        -webkit-transition: background-color 0.34s ease, transform 0.34s ease;
+        transition: background-color 0.34s ease, transform 0.34s ease;
+        transform: translateY(0);
+    } */
+    /* .sticky-active{
+        background-color: #121212;
+        transform: translateY(0);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    } */
+    .header.headerDown{
+        transform: translateY(0px); /* Adjust this to the height of your header */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Drop shadow when scrolling */
+        background-color: #121212; /* Change to your desired color */
+        background-image: none;
+    }
+    .header.headerUp{
+        transform: translateY(-90px);
+    }
+    .dropdown-content{
+        margin-left: 20px !important;
+    }
+    @media (max-width: 1279px) {
+        .header{
+            padding: 12px 32px;
+        }
+    }
+    @media (max-width: 499px) {
+        .header{
+            padding: 20px 14px;
+        }
+    }
+    .top-lg-slide-item-cover{
+        background-image: linear-gradient(rgba(18, 18, 18, 0) 10vw, rgb(18, 18, 18) 60vw), linear-gradient(to left, rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0) 50%);
+    }
+    .main-top-slider-cover{
+        background-image: linear-gradient(rgba(18, 18, 18, 0) 0%, rgb(18, 18, 18) 100%);
+    }
+    @media (max-width: 499px){
+        .top-lg-slide-item-cover{
+            background-image: linear-gradient(rgba(18, 18, 18, 0) 10vw, rgb(18, 18, 18) 135vw) !important;
+            padding-bottom: 120px !important;
+        }
+        .main-body{
+            margin-top: -72px;
+        }
+        
+    }
+    @media (max-width: 700px){
+        .top-slider-btton{
+            height: 33px !important;
+            min-height: 33px !important;
+            min-width: 0px !important;
+            padding: 0px 16px !important;
+        }
+    }
+    .swiper-pagination .swiper-pagination-bullet{
+        width: 10px;
+        height: 10px;
+        background-color: #A7A7A754;
+        transition: all 200ms ease-out;
+    }
+    .swiper-pagination .swiper-pagination-bullet-active{
+        background-color: #FFFFFF91;
+    }
+    @media (min-width: 500px) {
+        .swiper-pagination{
+            bottom: 8px;
+        }    
+    }
+    @media (max-width: 499px) {
+        .swiper-pagination{
+            bottom: 80px !important;
+        }        
+    }
+
+
+    .glass-button{
+        background-color: #D9D9D959;
+        border-radius: 10px;
+        padding: 0px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 11px;
+    }
+    .glass-button svg{
+        width: 20px;
+        color: #FFFFFF;
+    }
+    .glass-button span{
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "yekan-medium";
+        color: #FFFFFF;
+    }
+    .glass-button:hover{
+        background-color: rgba(255,255,255,0.4);
+    }
+    .white-button{
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding: 0px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 11px;
+    }
+    .white-button svg{
+        width: 20px;
+        color: #000000;
+    }
+    .white-button span{
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "yekan-medium";
+        color: #000000;
+    }
+    .white-button:hover{
+        background-color: #1993ff;
+    }
+    @media (max-width: 499px){}
+    .main-body-top-slider .white-button{
+        height: 24px;
+        border-radius: 4px;
+    }
+    .main-body-top-slider .white-button span{
+        font-size: 12px;
+
+    }
+
+
+
+    .film-chapters-dropdown-item{
+        font-size: 16px;
+        font-weight: 600;
+        font-family: "yekan-semibold";
+        color: #C3C3C3;
+        padding: 8px 12px;
+        border-radius: 4px;
+        width: 100%;
+    }
+    .film-chapters-dropdown-item:hover{
+        background-color: rgba(255,255,255,0.4);
+    }
+    .film-chapters-dropdown-item[aria-selected ="true"]{
+        color: #1993ff;
+    }
+
+
+    .bg-texture1{
+        background-image: url('../../semi-image/bg-cover.png') !important;
+    
+    }
+    
+    
+    .sticky-footer-item p{
+        color: #ACADAF;
+    }
+    .sticky-footer-item svg{
+        color: #ACADAF;
+    }
+    .sticky-footer-item.active p{
+        color: #FFFFFF;
+    }
+    .sticky-footer-item.active svg{
+        color: #FFFFFF;
+    }
+
+
+
+    .header-home-dropdown-item{
+
+    }
+    .header-home-dropdown-item-right{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .header-home-dropdown-item-right p{
+
+    }
+    .header-home-dropdown-item-right svg{
+        width: 16px;
+        color: #FFFFFF;
+    }
+    .header-home-dropdown-item.active .header-home-dropdown-item-tick{
+        display: flex;
+    }
+    .header-home-dropdown-item-tick{
+        display: none;
+    }
+    .header-home-dropdown-item-tick svg{
+        width: 20px;
+        color: #1993ff;
+    }
+
+
+    #header-home-dropdown-button svg{
+        transition: all 300ms ease;
+    }
+    #header-home-dropdown-button.active svg{
+        transform: rotateX(180deg);
+    }
+
+
+    .swiper-button-prev::after{
+        content: " " !important;
+    }
+    .swiper-button-next::after{
+        content: " " !important;
+    }
+
+    .category-slider-item-cover{
+        top: 32.5511%;
+        left: 41.5039%;
+        transform: rotate(135deg);
+        background-color: rgba(255,255,255,0.2);
+        filter: blur(48px);
+    }
+    .category-slider-item-cover1{
+        background: linear-gradient(0deg, rgba(95,27,134,1) 63%, rgba(184,162,196,1) 100%);
+    }
+    .category-slider-item-cover2{
+        background: linear-gradient(0deg, rgba(56,94,168,1) 63%, rgba(162,180,196,1) 100%);
+    }
+    .category-slider-item-cover3{
+        background: linear-gradient(0deg, rgba(61,168,56,1) 63%, rgba(162,196,163,1) 100%);
+    }
+    .category-slider-item-cover4{
+        background: linear-gradient(0deg, rgba(238,56,28,1) 63%, rgba(235,196,61,1) 100%);
+    }
+    .category-slider-item-cover5{
+        background: linear-gradient(283deg, rgba(17,74,104,1) 0%, rgba(33,78,45,1) 100%);
+    }
+}
+
