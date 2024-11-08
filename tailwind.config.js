@@ -9,7 +9,7 @@ module.exports = {
       'lg': '18px', 
       'xl': '20px', 
       '2xl': '24px',
-      '3xl': '30px',
+      '3xl': '32px',
       '4xl': '36px',
       '5xl': '48px',   
       '6xl': '64px',
@@ -50,6 +50,10 @@ module.exports = {
       'mdlg-max' : {
         'max' : '1050px'
       },
+      'lg' : {
+        'min' : '800px',
+        'max' : '1279px',
+      },
       'max-lg' : {
         'max' : '1279px'
       },
@@ -72,6 +76,7 @@ module.exports = {
 
     },
     spacing:{
+      '0' : '0',
       '0.5' : '4px',
       '1' : '4px',
       '1.5' : '6px',
@@ -184,7 +189,12 @@ module.exports = {
         '25/1' : "2.5 / 1",
         '1/147' : "1/1.4736",
         '183/1' : "1.8336/1",
+        '138/90' : "138/90",
+        '1/1.502' : "1/1.502",
       },
+      gridTemplateColumns: {
+        '344-1fr' : '344px minmax(0, 1fr)'
+      }
     },
   },
   plugins: [

@@ -1,12 +1,8 @@
-.bg-bluring-11{
-        -webkit-backdrop-filter: blur(11px);
-        backdrop-filter: saturate(180%) blur(11px);
-        filter: blur(7px);
-        -webkit-filter: blur(7px);
-    }   
-
-    /* .bg-bluring-11{
-        background-color: rgba(255, 255, 255, 0.2);
-        filter: blur(60px) !important;
-        
-    }    */
+.footer-up{
+    position: fixed !important;
+    z-index: 50 !important;
+    bottom: 0 !important;
+}
+.footer-down{
+    position: static;
+}

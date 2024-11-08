@@ -2,8 +2,8 @@
 
 
 const swiper = new Swiper('#top-larg-slider', {
-    loop: false,
-    speed: 1400,
+    loop: true,
+    speed: 2000,
     spaceBetween: 0,
     slidesPerView: 1,
     effect: "fade",
@@ -19,10 +19,10 @@ const swiper = new Swiper('#top-larg-slider', {
         el: '.swiper-pagination',
         clickable: true
     },
-    // autoplay:{
-    //     delay: 2000,
-    //     disableOnInteraction: false, 
-    // }
+    autoplay:{
+        delay: 7000,
+        disableOnInteraction: false, 
+    }
 });
 
 
@@ -153,7 +153,7 @@ const buttonText = document.getElementById("footer-text-collapse");
 const buttonIcon = document.getElementById("footer-text-collapse-icon");
 const buttonTextSelf = document.getElementById("footer-text-collapse-text");
 
-// تابع برای محدود کردن متن به 24 کلمه
+
 function limitText() {
     const words = moreText.innerText.split(" ");
     
@@ -194,8 +194,8 @@ function limitText() {
 
             const words = text.split(" "); // تقسیم متن به کلمات
             
-            if (words.length > 15) {
-                const visibleText = words.slice(0, 15).join(" ") + "..."; // محدود کردن به 15 کلمه و اضافه کردن سه نقطه
+            if (words.length > 8) {
+                const visibleText = words.slice(0, 8).join(" ") + "..."; // محدود کردن به 15 کلمه و اضافه کردن سه نقطه
                 textElement.innerText = visibleText; // نمایش متن محدود شده
             }
         }
@@ -316,6 +316,18 @@ function updateButtonActiveState() {
         toggleButton.classList.remove('active'); // حذف کلاس active
     }
 }
+const dropdownElement2 = document.getElementById('header-home-dropdown'); // شناسه المان دراپ‌داون
+const toggleButton2 = document.getElementById('header-home-dropdown-button'); // شناسه دکمه
+
+// تابع برای بررسی و تغییر کلاس
+function updateButtonActiveState() {
+    // بررسی اینکه آیا المان دارای کلاس 'block' است یا خیر
+    if (dropdownElement2.classList.contains('block')) {
+        toggleButton2.classList.add('active'); // اضافه کردن کلاس active
+    } else {
+        toggleButton2.classList.remove('active'); // حذف کلاس active
+    }
+}
 
 // فراخوانی تابع در زمان بارگذاری صفحه
 window.onload = updateButtonActiveState;
@@ -325,3 +337,73 @@ toggleButton.addEventListener('click', updateButtonActiveState);
 
 // آپدیت‌کننده خودکار برای بررسی وضعیت هر ۱ ثانیه
 setInterval(updateButtonActiveState, 100);
+
+
+
+
+document.addEventListener('scroll', function() {
+    const footer = document.querySelector('.main-footer');
+    const myElement = document.getElementById('main-footer-navbar');
+
+    const footerRect = footer.getBoundingClientRect();
+    
+    // بررسی اینکه آیا فوتر در دید است یا خیر
+    if (footerRect.top <= window.innerHeight && footerRect.bottom >= 0) {
+        myElement.classList.remove('footer-up');
+        myElement.classList.add('footer-down');
+    } else {
+        myElement.classList.remove('footer-down');
+        myElement.classList.add('footer-up');
+    }
+});
+
+
+document.getElementById('header-home-dropdown-button2').addEventListener('click', function() {
+    // نام متغیر پیچیده برای دکمه دوم
+    const complexVariableForSecondButton = document.getElementById('header-home-dropdown-button');
+    
+    // شبیه‌سازی کلیک روی دکمه دوم
+    complexVariableForSecondButton.click();
+});
+
+// اضافه کردن یک رویداد کلیک به دکمه دوم برای مشاهده نتیجه
+document.getElementById('header-home-dropdown-button').addEventListener('click', function() {
+    console.log('دکمه دوم کلیک شد!');
+});
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+// let semiSlidersParent
+// let semiSliderParent
+// let semiSlider
+
+
+// let semiSliders = [
+//     // all sliders container
+//     [
+//         // slider
+//         {
+//             sliderTitle : 'محبوب ترین ها',
+//             sliderItems : [
+//                 {
+//                     imgSrc : 'sallam',
+//                     videoType : 'film',
+//                     videoYear : '2024',
+//                     videoScore : '7/1',
+//                     videoName : 'اسم فیلم',
+//                     videoArtistName : 'اسم شخصی'
+//                 }
+//             ],
+//         }
+//     ]
+// ]
+
+

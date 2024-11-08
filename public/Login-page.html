@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="Fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Login Page</title>
+</head>
+<body class=" bg-[#1C1C1C] flex flex-col h-[100vh]">
+    <header class=" w-full h-[84px] px-[43px] py-[30px] flex items-center justify-start md-max:justify-center">
+        <!-- logo -->
+        <div class=" h-full flex items-center">
+            <img src="../images/logo-icon.png" class=" h-full w-auto" alt="#">
+            <img src="../images/logo-text.png" class=" h-full w-auto" alt="#">
+        </div>
+    </header>
+    <main class=" w-full h-full flex-grow-1 flex items-center justify-center md:px-5 smMax:px-5">
+        <div class=" w-[508px] rounded-[10px] flex flex-col items-center justify-center gap-8 px-12 py-[67px] md:px-[30px] md:py-[40px] smMax:gap-4 smMax:pt-[70px] smMax:pb-[32px] smMax:px-6" style="background: linear-gradient(180deg, #292929 0%, rgba(41, 41, 41, 0.5) 100%);">
+            <!-- title -->
+            <div class="flex flex-col items-center gap-7 md:gap-[18px] smMax:gap-[18px]">
+                <!-- main title -->
+                <h1 class="text-light text-[32px] font-Farsi-FaNum-bold font-bold md:text-[28px] smMax:text-[24px]">
+                    ورود
+                </h1>
+                <!-- subtitle -->
+                <h5 class=" text-light text-[20px] font-Farsi-FaNum-semibold font-semibold md:text-[16px] smMax:text-[16px]">
+                    شماره تلفن خود را وارد کنید
+                </h5>
+            </div>
+            <!-- input -->
+            <form action="#" class="w-full flex flex-col gap-8 smMax:gap-[20px]">
+                <input id="loginPageInput" type="text" class=" w-full border-[2px] border-[#6A636366] bg-[#303030] rounded-[10px] text-[20px] text-light font-Farsi-FaNum-bold font-bold focus:bg-[#121212] focus:outline-none text-left px-3 py-2 smMax:font-Farsi-FaNum-mdeium smMax:font-medium smMax:text-base smMax:tracking-[2px]" maxlength="11" style="direction: ltr;">
+                <button id="loginPageButton" class=" w-full flex items-center justify-center text-[20px] font-Farsi-FaNum-regular font-normal text-light h-[58px] rounded-[10px] disabled:bg-[#19252C] bg-blue-900 smMax:text-base smMax:h-[48px]" disabled>
+                    <span>
+                        ورود / ثبت نام
+                    </span>
+                </button>
+            </form>
+        </div>
+    </main>
+    <footer class=" w-full h-[74px] bg-[#363636] px-[43px] flex items-center justify-between md:px-6 smMax:px-5 md:h-[48px] smMax:flex-col-reverse smMax:h-auto smMax:gap-3 smMax:py-[10px]">
+        <!-- right part -->
+        <div class="flex items-center gap-9 md:gap-4 smMax:gap-4 smMax:w-full smMax:justify-between">
+            <a href="#" class="text-light text-xs font-Farsi-FaNum-mdeium font-medium hover:text-[#0E72FF] md:text-[8px] smMax:text-[8px] ">
+                پرسش های متداول
+            </a>
+            <a href="#" class="text-light text-xs font-Farsi-FaNum-mdeium font-medium hover:text-[#0E72FF] md:text-[8px] smMax:text-[8px] ">
+                تماس با ما
+            </a>
+            <a href="#" class="text-light text-xs font-Farsi-FaNum-mdeium font-medium hover:text-[#0E72FF] md:text-[8px] smMax:text-[8px] ">
+                قوانین و شرایط
+            </a>
+            <a href="#" class="text-light text-xs font-Farsi-FaNum-mdeium font-medium hover:text-[#0E72FF] md:text-[8px] smMax:text-[8px] ">
+                شبکه های اجتماعی
+            </a>
+        </div>
+        <!-- left part -->
+        <div class="flex items-center gap-9">
+            <a href="#" class="flex items-center gap-2 text-light md:gap-1 smMax:gap-1">
+                <svg class=" w-6 text-light md:w-4 smMax:w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                  </svg>  
+                <span class=" text-base text-light font-Farsi-FaNum-mdeium font-medium md:text-[12px] smMax:text-[10px]">
+                    دریافت اپلیکشن های مونو
+                </span>                
+            </a>
+        </div>
+    </footer>
+    <script src="../Javascript/script.js"></script>
+    <script src="../Javascript/loginSignup.js"></script>
+</body>
+</html>
