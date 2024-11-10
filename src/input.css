@@ -663,6 +663,24 @@
         background: linear-gradient(74.12deg, #222222 50.09%, rgba(26, 30, 33, 0.05) 100%);
 
     }
+    @media(max-width: 499px){
+        .profile-gradient1{
+            background: #37383D;
+    
+        }
+        .profile-gradient2{
+            background: #37383D;
+    
+        }
+        .profile-gradient3{
+            background: #37383D;
+    
+        }
+        .profile-gradient4{
+            background: #37383D;
+    
+        }
+    }
 
 
     .page2-landing-gradient{
@@ -674,14 +692,15 @@ linear-gradient(90deg, rgba(0, 0, 0, 0) 53.97%, #121212 100%);
     }
 
 
-
+    .circleSVG{
+        transform: rotate(280deg);
+    }
     #progressCircle{
         fill: none;
         stroke: url(#GradientColor);
         stroke-width: 16px;
         stroke-dasharray: 316;
         box-shadow: -2px 0px 17.6px 0px #8BFFBA73;
-
     }
 
 
@@ -712,6 +731,22 @@ linear-gradient(90deg, rgba(0, 0, 0, 0) 53.97%, #121212 100%);
     }
     .accordion-content.active{
         height: auto !important;
+    }
+
+
+
+    /* profile */
+
+
+    body{
+
+    }
+    @media (max-width: 499px) {
+        body{
+            background: linear-gradient(0deg, #121212, #121212),
+linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #2F6785 109.87%) !important;
+
+        }
     }
 }
 
